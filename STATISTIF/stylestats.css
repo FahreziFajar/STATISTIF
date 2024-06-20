@@ -1,0 +1,193 @@
+* {
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Comfortaa', cursive;
+}
+
+.sidebar {
+	margin-top: -10px;
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #00004d;
+	transition: all .5s ease;
+}
+.sidebar header img {
+	height: 65px;
+	width: 205px;
+	padding-left: 10px;
+}
+.sidebar ul a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	font-family: courier;
+	color: white;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+}
+.sidebar ul li:hover {
+	padding-left: 40px;
+	transition: all 1s ease;
+}
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+#check {
+	display: none;
+}
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #00004d;
+}
+label #btn{
+	left:  40px;
+	top: 25px;
+	font-size: 20px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+	border-radius: 5px;
+}
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 10px;
+	font-size: 20px;
+	color: white;
+	padding: 4px 9px;
+	transition: all .5s ease;
+	border-radius: 50%;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel {
+	left: 210px;	
+}
+#check:checked ~ section {
+	margin-left: 250px;
+}
+.item{
+	font-size: 24px;
+	margin-top: 170px;
+	padding-left: 650px;
+} 
+.item ul li {
+	padding: 20px;
+}
+h1{
+	text-align: center;
+	font-size: 66px;
+  	margin-top: 10px;
+  	margin-left: 65px;i
+  	margin-bottom: 1px;
+  }
+h2 {
+	font-size: 35px;
+	color: grey;
+	text-align: center;
+	margin-top: -40px;
+}
+h3 {
+	font-size: 44px;
+	padding-left: 25%;
+	margin-top: 7%;
+}
+section {
+	transition: all .5s;
+}
+#myChart {
+	height:25vh;
+	width:25vw; 
+	margin:auto;
+
+}
+.stat {
+	margin-top: 6%;
+}
+.profil {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	margin-left: 22%;
+}
+.bio {
+	font-weight: bold;
+	margin-top: 25px;
+	padding-left: 20%;
+}
+h4{
+	padding-left: 24%;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.mahasiswa p {
+    margin-bottom: 0px;
+ }
+
+ .detailmhs {
+ 		float: right;
+ 		padding-right: 220px;
+ 		margin-top: -40px; 
+		font-size: 18px;	
+ }
+ .tabeltsk {
+ 	margin-top: 5%;
+ }
+
+table {
+	margin-left: 20%;
+	font-weight: bold;
+	font-size: 15px;
+}
+table th {
+	padding-left: 65px;
+	padding-right: 65px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #00004d;
+	color: white;
+}
+table td {
+	padding: 10px;
+}
+.no {
+	background-color: cyan;
+	text-align: center;
+}
+.sks {
+	text-align: center;
+}
+.mhs {
+	text-align: center;
+}
+
+footer{
+	background-color: #00004d;
+	color: #fff;
+	height: 90px;
+	width: auto;
+	font-size: 15px;
+	font-family: Arial;
+	margin-bottom: 0;
+	text-align: center;
+}
+footer p {
+	padding-top: 10px;
+}

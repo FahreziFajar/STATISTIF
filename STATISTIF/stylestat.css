@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.sidebar {
+	margin-top: -10px;
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #00004d;
+	transition: all .5s ease;
+}
+.sidebar header img {
+	height: 65px;
+	width: 205px;
+	padding-left: 10px;
+}
+.sidebar ul a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	font-family: courier;
+	color: white;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+}
+.sidebar ul li:hover {
+	padding-left: 40px;
+	transition: all 1s ease;
+}
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+#check {
+	display: none;
+}
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #00004d;
+}
+label #btn{
+	left:  40px;
+	top: 25px;
+	font-size: 20px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+	border-radius: 5px;
+}
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 10px;
+	font-size: 20px;
+	color: white;
+	padding: 4px 9px;
+	transition: all .5s ease;
+	border-radius: 50%;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel {
+	left: 210px;	
+}
+#check:checked ~ section {
+	margin-left: 250px;
+}
+.item{
+	font-family: 'Comfortaa', cursive;
+	font-size: 24px;
+	margin-top: 170px;
+	padding-left: 650px;
+} 
+.item ul li {
+	padding: 20px;
+}
+h1{
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	font-size: 44px;
+  	margin-top: 10px;
+  	margin-left: 65px;i
+  	margin-bottom: 1px;
+  }
+h2 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 35px;
+	color: grey;
+	text-align: center;
+	margin-top: -25px;
+}
+section {
+	transition: all .5s;
+	font-family: 'Didact Gothic', sans-serif;
+}
+#myChart {
+	height:25vh;
+	width:25vw; 
+	margin:auto;
+
+}
+
+.title221 {
+	font-size: 35px;
+	font-family: 'Didact Gothic', sans-serif;
+	padding: 50px;
+}
+.mahasiswa {
+	color: black;
+	margin-left: 130px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    width: 1000px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+	font-family: 'Didact Gothic', sans-serif;
+}
+.profil {
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	margin-left: 150px;
+}
+.bio {
+	margin-top: -25px;
+	float: right;
+	padding-right: 380px;
+}
+.mahasiswa h4 {
+    margin-top: 0;
+    padding-left: 150px;
+}
+
+.mahasiswa p {
+    margin-bottom: 0px;
+ }
+
+ .detailmhs {
+ 		float: right;
+ 		padding-right: 220px;
+ 		margin-top: -40px;
+ 		font-family: 'Didact Gothic', sans-serif;
+		font-size: 18px;	
+ }
+
+footer{
+	background-color: #00004d;
+	color: #fff;
+	height: 90px;
+	width: auto;
+	font-size: 15px;
+	font-family: Arial;
+	margin-bottom: 0;
+	text-align: center;
+}
